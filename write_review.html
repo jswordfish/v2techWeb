@@ -195,8 +195,9 @@
                             <input type="radio" id={{'star2_'+book.id}}   ng-model="book.id"  ng-value="'2'" /><label class = "full" for={{'star2_'+book.id}}  title="Kinda bad - 2 stars"></label>
                            
                             <input type="radio" id={{'star1_'+book.id}}   ng-model="book.id"  ng-value="'1'" /><label class = "full" for={{'star1_'+book.id}}  title="Sucks big time - 1 star"></label>
-                           
-                    <a href ng-click="reviewBook(book.id, book.largeImageUrl, book.isbn, book.bookTitle, book.authors)">Review this</a>
+			    <a href="" ng-click="reviewBook(book.id, book.largeImageUrl, book.isbn, book.bookTitle, book.authors)">Review this</a>
+                   </fieldset>        
+                    
                 </div>
             </div>
             <div class="loadmore"><a href="#">load more</a></div>
