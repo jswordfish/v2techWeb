@@ -11,10 +11,14 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/menu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-resource.js"></script>
 
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="js/applicationBooksController.js"></script>
     </head>
 	
-    <body>
+    <body ng-app="myApp" ng-controller="bookController">
 
         <div class="header">
             <div class="logo col-md-3"> 
@@ -178,185 +182,21 @@
 
         <div class="container">
             <div class="col-md-12 booklist">
-                <div class="item text-center">
-                    <img src="images/book1.png">
+                 <div class="item text-center" ng-repeat="book in searchResponse.books">
+                     <img  data-ng-src="{{book.mediumImageUrl}}" >
                     <label>RATE IT</label>
                     <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book2.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book3.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book4.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book5.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book6.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book7.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book8.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book9.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book10.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book11.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book12.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book13.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book14.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
-                </div>
-                <div class="item text-center">
-                    <img src="images/book15.png">
-                    <label>RATE IT</label>
-                    <fieldset class="rating">       
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset> 
-                    <div class="read"><a href="#">want to read</a></div>
+                        <input type="radio" id={{'star5_'+book.id}}  ng-model="book.id"  ng-value="'5'"  /><label class = "full" for={{'star5_'+book.id}} title="Awesome - 5 stars"></label>
+                         
+                            <input type="radio" id={{'star4_'+book.id}}  ng-model="book.id"  ng-value="'4'" /><label class = "full" for={{'star4_'+book.id}} title="Pretty good - 4 stars"></label>
+                          
+                            <input type="radio" id={{'star3_'+book.id}}   ng-model="book.id"  ng-value="'3'" /><label class = "full" for={{'star3_'+book.id}}  title="Meh - 3 stars"></label>
+                          
+                            <input type="radio" id={{'star2_'+book.id}}   ng-model="book.id"  ng-value="'2'" /><label class = "full" for={{'star2_'+book.id}}  title="Kinda bad - 2 stars"></label>
+                           
+                            <input type="radio" id={{'star1_'+book.id}}   ng-model="book.id"  ng-value="'1'" /><label class = "full" for={{'star1_'+book.id}}  title="Sucks big time - 1 star"></label>
+                           
+                    <a href ng-click="reviewBook(book.id, book.largeImageUrl, book.isbn, book.bookTitle, book.authors)">Review this</a>
                 </div>
             </div>
             <div class="loadmore"><a href="#">load more</a></div>

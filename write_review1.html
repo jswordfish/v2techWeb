@@ -12,11 +12,16 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/menu.css">
 		
-		<link rel="stylesheet" href="css/jqx.base.css" type="text/css" />
+	<link rel="stylesheet" href="css/jqx.base.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+   		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-resource.js"></script>
+
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  		<script src="js/applicationBooksController.js"></script>
 
     </head>
 	
-    <body>
+    <body ng-app="myApp" ng-controller="reviewController">
         <div class="header">
             <div class="logo col-md-3"> 
                 <a href="index.html"><img src="images/colorlogo.png" /></a>
@@ -125,12 +130,12 @@
 		<div class="container">
             <div class="book_detail">
                 <div class="col-md-5 text-center">
-                    <img src="images/book_main.jpg">
+                    <img  data-ng-src="{{imageUrl}}" >
                 </div>
                 <div class="book_info col-md-7">
-                    <h3>Book : Book Name & Author's Name</h3>
+                    <h3>Book : {{bookTitle}} By {{bookAuthors}}</h3>
                     <h3>Description</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Not Provided</p>
                     <h3>Rating</h3>
                     <fieldset class="rating" style="float: left !important;width: auto;">       
                         <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
@@ -167,17 +172,17 @@
                     <label class="label_name">Coverage</label>
                     <div class="coverage">
                         <li>How relevant is this book for the 'topic' on ascale of 1-6?</li>     
-                        <div class='jqxSlider'></div>  
+                        <div class='jqxSlider' id='jqxSlider1' > </div>  
                         <br><br>
                         <li>Explanation of concepts required to fully understand topics successfully answer exam questions</li>     
-                        <div class='jqxSlider'></div> 
+                        <div class='jqxSlider'  id='jqxSlider2'> </div> 
                         <br><br>
                         <li>Language and ease of understanding</li>     
-                        <div class='jqxSlider'></div> 
+                        <div class='jqxSlider' id='jqxSlider3'></div> 
                     </div>  
                     
                     <div class="paginations">
-                        <a href="javascript:void(0);" id="prev" class="prev1"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                       
                         <a href="javascript:void(0);" id="next" class="next1"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>                    
                 </div>
@@ -206,22 +211,22 @@
                     <label class="label_name">Learing Aides</label>
                     <div class="coverage">
                         <li>Effectiveness of practice problems and closeness to real exam questions</li>     
-                        <div class='jqxSlider'></div> 
+                        <div class='jqxSlider' id='jqxSlider4'></div> 
                         <br><br>
                         <li>Completeness, presentation, and variety of solved examples used to illustrate concepts</li>     
-                        <div class='jqxSlider'></div>
+                        <div class='jqxSlider' id='jqxSlider5'></div>
                         <br><br>
                         <li>Completeness, accuracy, and presentation of solutions to practice problems</li>     
-                        <div class='jqxSlider'></div>
+                        <div class='jqxSlider' id='jqxSlider6'></div>
                         <br><br>
                         <li>Use of visual aides to explain concepts (e.g., diagrams, flowcharts, tables, graphics)</li>     
-                        <div class='jqxSlider'></div>
+                        <div class='jqxSlider' id='jqxSlider7'></div>
                         <br><br>
                         <li>Use of real-life examples to explain concepts (e.g., case studies, practical applications)</li>     
-                        <div class='jqxSlider'></div>
+                        <div class='jqxSlider' id='jqxSlider8'></div>
                         <br><br>
                         <li>How strongly would you recommend this book to your juniors preparing for the same exam?</li>     
-                        <div class='jqxSlider'></div>
+                        <div class='jqxSlider' id='jqxSlider9'></div>
                     </div>                    
                     <div class="paginations">
                         <a href="javascript:void(0);" id="prev" class="prev2"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
@@ -230,40 +235,7 @@
                 </div>
             </div> <!-- Step 2 -->
 			
-            <!--<div class="haveuread last_step" id="step3">
-                <div class="readbook col-md-6">
-                    <P>
-                        Have you read this book? <br>
-                        We'd love to head what you think of it. <br>
-                        Your review will help our community of students, <br>
-                        and it will get you closer to becomming one of our <br>
-                        influencers! <br>
-                        Rate this book based on the following questions:
-                    </P>
-                </div>
-                <div class="bookrate col-md-6">
-                    <h3>How strongly would you recommended this book?</h3>
-                    <div class="">
-                        <label>Your rating</label>
-                        <img src="images/rate.jpg">
-                        <span>5.0</span>  
-                    </div>
-                </div>
-                <div class="book_label">
-                    <label class="label_name">Coverage3</label>
-                    <div class="coverage">
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ?</li>     
-                        <div class='jqxSlider'></div>  
-                    </div>
-                    <div class="sub_button">
-                        <a href="#">SUBMIT</a>
-                    </div>
-                    <div class="paginations">
-                        <a href="javascript:void(0);" id="prev" class="prev3"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                        <a href="javascript:void(0);" id="next" class="next3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div> --> <!-- Step 3 -->
+            <!-- Step 3 -->
 			
 		<div class="haveuread tip_step" id="step3">
                     <div class="book_label">
@@ -271,31 +243,30 @@
                     <div class="coverage writereview">
                         <li>Like most things, books come with an invisible manual. Tell us your secret for best using the book. </li> 
                         <p>Think about books to complement this one, timing of use, sequencing of topics, anything you found particularly helpful in your study.</p>
-                        <textarea style="width: 100%;" placeholder="Write a review..."></textarea>
+                        <textarea style="width: 100%;" placeholder="Write a review..." ng-model="review.secretForBestUsing"></textarea>
                         <br><br>
                         <li>Completeness, presentation, and variety of solved examples used to illustrate concepts</li> 
                         <p>Remember, students will often see this first. Make it detailed and avoid generic responses.</p>
-                        <textarea placeholder="Write a review..."></textarea>                        
+                        <textarea placeholder="Write a review..." ng-model="review.suggestionsForImprovement"></textarea>                        
                     </div> 
                     
                 
                     <div class="sub_button">
-                        <div class="buttons" style="width: 82%;float: left;position: relative;top: 5px;"><span id="cov_top">i</span></div><a href="#">Submit</a><a href="#">Coverage</a>
-                        <div class="coverage_tip">
-                            <i class="fa fa-caret-up" aria-hidden="true"></i>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   </p>
-                        </div>   
+                        <div class="buttons" style="width: 82%;float: left;position: relative;top: 5px;"> </div><a href="" ng-click="submitReview()">Submit</a>
+
                     </div>                    
                     
-<!--                     <div class="paginations">
+                     <div class="paginations">
                         <a href="javascript:void(0);" id="prev" class="prev3"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                        <a href="javascript:void(0);" id="next" class="next3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>-->
+<!--                        <a href="javascript:void(0);" id="next" class="next3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
+                    </div>
                 </div>
                    
             </div> <!-- Step 4 -->
         </div>
-		
+	
+	
+	
 		<div class="feedback">
 			<div class="feedbacklink">
 				<a href="javascript:void(0);" id="showfeedback">feedback</a>
@@ -434,6 +405,7 @@
                 
             });
         </script> <!-- Next Prev Script -->
+	
 		
 		<script type="text/javascript">
             $(function () {
