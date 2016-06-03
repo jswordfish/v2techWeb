@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title id='Description'>Grovenue</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!--<link rel="icon" href="favicon.png">-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/menu.css">
+		
+		<link rel="stylesheet" href="css/jqx.base.css" type="text/css" />
+
+    </head>
+	
+    <body>
+        <div class="header">
+            <div class="logo col-md-3"> 
+                <a href="index.html"><img src="images/colorlogo.png" /></a>
+            </div>
+
+            <div class="menu col-md-9">
+                <div class="top">
+                    <div class="search">
+                        <!--<div class="all"><a href="javascript:void(0);" id="all">All <i class="fa fa-caret-down" aria-hidden="true"></i></a> </div>-->
+                        <input type="text" name="search" placeholder="Search" /><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <!--<div class="popup">
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                            <ul>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Engineering</a></li>
+                                <li><a href="#">Medicine</a></li>
+                                <li><a href="#">Law</a></li>
+                                <li><a href="#">Unversities</a></li>
+                                <li><a href="#">Pharmacy</a></li>
+                                <li><a href="#">Computer Applications</a></li>
+                                <li><a href="#">Finance & Accounts</a></li>
+                                <li><a href="#">Hospitality & Tourism</a></li>
+                                <li><a href="#">Media & Jourmalism</a></li>
+                                <li><a href="#">Animation & Fashion</a></li>
+                                <li><a href="#">School</a></li>
+                                <li><a href="#">Competition</a></li>
+                                <li><a href="#">Study Abroad</a></li>			
+                            </ul>
+                        </div>-->
+                    </div>
+                    <div class="login-reg"> 
+                        <img src="images/user.png" />
+                        <div class="logreg">
+                            <a href="#">login</a> / <a href="#">register</a>
+                        </div>
+                    </div>
+                </div>
+                <div id='cssmenu'>
+                    <ul>
+                        <li><a href="#" class="menulink">discover</a></li>
+                        <li class='active'><a href="#" class="menulink">prepare for greatness</a></li>
+                        <li><a href="#" class="menulink">be job ready</a></li>
+                        <li><a href="write_review.html" class="menulink">write a review</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- Header -->
+		
+		<div class="tellyourgb">
+			<div class="tellusreview">
+				<div class="tellusleft col-md-9 text-center">
+					<label>Share your gyaan</label>
+				</div>
+				<div class="tellusright col-md-3">
+					<div class="img">
+						<img src="images/testimonials.png">
+					</div>
+					<div class="userinfo">
+						<h3>User Name</h3>
+						<p>14 Review, 38 Followers</p>
+						<span>Last Activity <br> 15 minutes ago</span>
+						<!--<img src="images/cup.png">-->
+					</div>
+				</div>
+			</div> <!-- User Name -->
+	
+			<div class="container">
+				<div class="selectbook">
+					<div class="book col-md-4 text-center">
+						<a href="#"><img src="images/book.png"></a>
+						<h3><a href="#">Books</a></h3>
+					</div>
+					<div class="coaching col-md-4 text-center">
+						<a href="#"><img src="images/coaching.png"></a>
+						<h3><a href="#">Coaching Classes</a></h3>
+					</div>
+					<div class="digital col-md-4 text-center">
+						<a href="#"><img src="images/digital.png"></a>
+						<h3><a href="#">Digital Tools</a></h3>
+					</div>
+				</div>
+			</div> <!-- Books, Coaching Classes, Digital Tools -->
+	
+			<div class="container auto-search">
+				<div class="row">
+					<div class="col-md-12 searchbox">
+						<form name="search" action="javascript:void(0);">
+							<input type="text" name="autosearch" list="autosearch" id="txt" placeholder="SEARCH"/>
+							<input type="submit" name="submit" value="search" id="searchbook">
+							<datalist id="autosearch">
+								<option value="Big Vision, medium Business : The Four Keys to Finding Success & Satisfaction as a Lifestyle Entrepreneur">
+								<option value="The Leadership Pill: The Missing Ingredient in Motivating People Today">
+								<option value="The Great Unraveling: Losing Our Way in the New Century">
+								<option value="The Five Dysfunctions of a Team: A Leadership Fable">
+								<option value="The Sales Bible: The Ultimate Sales Resource, Revised Edition">
+								<option value="The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You">
+								<option value="The Smartest Guys In The Room">
+								<option value="The Tipping Point: How Little Things Can Make a Big Difference">    
+							</datalist>
+						</form>
+					</div>
+				</div>
+			</div> <!-- Search -->
+		</div>
+		
+		<div class="container">
+            <div class="book_detail">
+                <div class="col-md-5 text-center">
+                    <img src="images/book_main.jpg">
+                </div>
+                <div class="book_info col-md-7">
+                    <h3>Book : Book Name & Author's Name</h3>
+                    <h3>Description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h3>Rating</h3>
+                    <fieldset class="rating" style="float: left !important;width: auto;">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                </div>
+            </div>
+        </div> <!-- Author's Name -->
+		
+        <div class="container">
+            <div class="haveuread" id="step1">
+                <div class="readbook col-md-6">
+                    <P>
+                        Have you read this book? <br>
+                        We'd love to head what you think of it. <br>
+                        Your review will help our community of students, <br>
+                        and it will get you closer to becomming one of our <br>
+                        influencers! <br>
+                        Rate this book based on the following questions:
+                    </P>
+                </div>
+                <div class="bookrate col-md-6">
+                    <h3>How strongly would you recommended this book?</h3>
+                    <div class="">
+                        <label>Your rating</label>
+                        <img src="images/rate.jpg">
+                        <span>5.0</span>  
+                    </div>
+                </div>
+                <div class="book_label">
+                    <label class="label_name">Coverage</label>
+                    <div class="coverage">
+                        <li>How relevant is this book for the 'topic' on ascale of 1-6?</li>     
+                        <div class='jqxSlider'></div>  
+                        <br><br>
+                        <li>Explanation of concepts required to fully understand topics successfully answer exam questions</li>     
+                        <div class='jqxSlider'></div> 
+                        <br><br>
+                        <li>Language and ease of understanding</li>     
+                        <div class='jqxSlider'></div> 
+                    </div>  
+                    
+                    <div class="paginations">
+                        <a href="javascript:void(0);" id="prev" class="prev1"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" id="next" class="next1"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>                    
+                </div>
+               </div> <!-- Step 1 -->
+			
+             <div class="haveuread" id="step2">
+                <div class="readbook col-md-6">
+                    <P>
+                        Have you read this book? <br>
+                        We'd love to head what you think of it. <br>
+                        Your review will help our community of students, <br>
+                        and it will get you closer to becomming one of our <br>
+                        influencers! <br>
+                        Rate this book based on the following questions:
+                    </P>
+                </div>
+                <div class="bookrate col-md-6">
+                    <h3>How strongly would you recommended this book?</h3>
+                    <div class="">
+                        <label>Your rating</label>
+                        <img src="images/rate.jpg">
+                        <span>5.0</span>  
+                    </div>
+                </div>
+                <div class="book_label">
+                    <label class="label_name">Learing Aides</label>
+                    <div class="coverage">
+                        <li>Effectiveness of practice problems and closeness to real exam questions</li>     
+                        <div class='jqxSlider'></div> 
+                        <br><br>
+                        <li>Completeness, presentation, and variety of solved examples used to illustrate concepts</li>     
+                        <div class='jqxSlider'></div>
+                        <br><br>
+                        <li>Completeness, accuracy, and presentation of solutions to practice problems</li>     
+                        <div class='jqxSlider'></div>
+                        <br><br>
+                        <li>Use of visual aides to explain concepts (e.g., diagrams, flowcharts, tables, graphics)</li>     
+                        <div class='jqxSlider'></div>
+                        <br><br>
+                        <li>Use of real-life examples to explain concepts (e.g., case studies, practical applications)</li>     
+                        <div class='jqxSlider'></div>
+                        <br><br>
+                        <li>How strongly would you recommend this book to your juniors preparing for the same exam?</li>     
+                        <div class='jqxSlider'></div>
+                    </div>                    
+                    <div class="paginations">
+                        <a href="javascript:void(0);" id="prev" class="prev2"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" id="next" class="next2"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div> <!-- Step 2 -->
+			
+            <!--<div class="haveuread last_step" id="step3">
+                <div class="readbook col-md-6">
+                    <P>
+                        Have you read this book? <br>
+                        We'd love to head what you think of it. <br>
+                        Your review will help our community of students, <br>
+                        and it will get you closer to becomming one of our <br>
+                        influencers! <br>
+                        Rate this book based on the following questions:
+                    </P>
+                </div>
+                <div class="bookrate col-md-6">
+                    <h3>How strongly would you recommended this book?</h3>
+                    <div class="">
+                        <label>Your rating</label>
+                        <img src="images/rate.jpg">
+                        <span>5.0</span>  
+                    </div>
+                </div>
+                <div class="book_label">
+                    <label class="label_name">Coverage3</label>
+                    <div class="coverage">
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ?</li>     
+                        <div class='jqxSlider'></div>  
+                    </div>
+                    <div class="sub_button">
+                        <a href="#">SUBMIT</a>
+                    </div>
+                    <div class="paginations">
+                        <a href="javascript:void(0);" id="prev" class="prev3"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" id="next" class="next3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div> --> <!-- Step 3 -->
+			
+		<div class="haveuread tip_step" id="step3">
+                    <div class="book_label">
+                    <label class="label_name">Learing Aides</label>
+                    <div class="coverage writereview">
+                        <li>Like most things, books come with an invisible manual. Tell us your secret for best using the book. </li> 
+                        <p>Think about books to complement this one, timing of use, sequencing of topics, anything you found particularly helpful in your study.</p>
+                        <textarea style="width: 100%;" placeholder="Write a review..."></textarea>
+                        <br><br>
+                        <li>Completeness, presentation, and variety of solved examples used to illustrate concepts</li> 
+                        <p>Remember, students will often see this first. Make it detailed and avoid generic responses.</p>
+                        <textarea placeholder="Write a review..."></textarea>                        
+                    </div> 
+                    
+                
+                    <div class="sub_button">
+                        <div class="buttons" style="width: 82%;float: left;position: relative;top: 5px;"><span id="cov_top">i</span></div><a href="#">Submit</a><a href="#">Coverage</a>
+                        <div class="coverage_tip">
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   </p>
+                        </div>   
+                    </div>                    
+                    
+<!--                     <div class="paginations">
+                        <a href="javascript:void(0);" id="prev" class="prev3"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="javascript:void(0);" id="next" class="next3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>-->
+                </div>
+                   
+            </div> <!-- Step 4 -->
+        </div>
+		
+		<div class="feedback">
+			<div class="feedbacklink">
+				<a href="javascript:void(0);" id="showfeedback">feedback</a>
+			</div>
+			<div class="forms">
+				<div class="closes" id="hidefeedback"><img src="images/close.png"></div>
+				<p>We'd love to hear from you. Drop us a note!</p>
+				<input type="text" name="name" placeholder="Name" />
+				<input type="email" name="email" placeholder="Email" />
+				<textarea name="message" placeholder="Message"></textarea>
+				<input type="submit" name="submit" value="Submit" />
+			</div>
+		</div> <!-- FeedBack -->
+		
+        <div class="footer">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/colorlogo.png" /></a></div>
+                <div class="menu partners col-md-3">
+					<div class="title">About Us</div>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="partners col-md-3">
+                    <div class="title">Partners</div>
+                    <ul>
+                        <li><a href="#">Advertise With Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="others col-md-3">
+                    <div class="title">Others</div>
+                    <ul>
+                        <li><a href="#">FAQS</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!--<div class="experience">
+                    <div class="title">For Mobile Experience</div>
+                    <img src="images/googleplay.png" />
+                </div>-->
+                <div class="followus col-md-3">
+                    <div class="title">Follow Us On</div>
+                    <ul>
+                        <li><a href="#"><img src="images/facebook.png" /></a></li>
+                        <li><a href="#"><img src="images/twitter.png" /></a></li>
+                        <li><a href="#"><img src="images/instra.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- Footer -->
+
+        <div class="horizonral"></div>
+		
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/custom-scripts.js"></script>
+        <script src="js/menu.js"></script>
+		
+		<script type="text/javascript" src="js/demos.js"></script>
+        <script type="text/javascript" src="js/jqxcore.js"></script>
+        <script type="text/javascript" src="js/jqxslider.js"></script>
+        <script type="text/javascript" src="js/jqxbuttons.js"></script>
+		
+		<script>
+            $(document).ready(function () {
+                $("#all").click(function () {
+                    $(".popup").toggle();
+                });
+            });
+        </script> <!-- Categories Script -->
+		
+		<script>
+            $(document).ready(function () {
+                $("#hidefeedback").click(function () {
+                    $(".forms").hide();
+                });
+                $("#showfeedback").click(function () {
+                    $(".forms").show();
+                });
+            });
+        </script> <!-- FeedBack Script -->
+		
+		<script type="text/javascript">
+            $(document).ready(function () {
+                $('.jqxSlider').jqxSlider({tooltip: true, mode: 'fixed'});
+            });
+        </script> <!-- Slider Script -->
+		
+		<script type="text/javascript">
+            $(document).ready(function () {
+                
+                $('#step2').hide();
+                $('#step3').hide();
+                $('#step4').hide();
+                
+                $('.next1').click(function () {
+                    $('#step1').hide();
+                    $('#step2').show();
+                    $('#step3').hide();
+                    $('#step4').hide();
+                });
+                
+                $('.prev2').click(function () {
+                    $('#step1').show();
+                    $('#step2').hide();
+                    $('#step3').hide();
+                    $('#step4').hide();
+                });
+                
+                $('.next2').click(function () {
+                    $('#step1').hide();
+                    $('#step2').hide();
+                    $('#step3').show();
+                    $('#step4').hide();
+                });
+                
+                $('.prev2').click(function () {
+                    $('#step1').show();
+                    $('#step2').hide();
+                    $('#step3').hide();
+                    $('#step4').hide();
+                });
+                
+                $('.prev3').click(function () {
+                    $('#step1').hide();
+                    $('#step2').show();
+                    $('#step3').hide();
+                    $('#step4').hide();
+                });
+                
+                
+            });
+        </script> <!-- Next Prev Script -->
+		
+		<script type="text/javascript">
+            $(function () {
+                var menuVisible = false;
+                $('.coverage_tip').css({'display': 'none'});
+                $('#cov_top').hover(function () {
+                    if (menuVisible) {
+                        $('.coverage_tip').css({'display': 'none'});
+                        menuVisible = false;
+                        return;
+                    }
+                    $('.coverage_tip').css({'display': 'block'});
+                    menuVisible = true;
+                });
+                $('.coverage_tip').hover(function () {
+                    $(this).css({'display': 'none'});
+                    menuVisible = true;
+                });                         
+            });
+        </script> <!-- Covrage Tip -->
+		
+    </body>
+</html>

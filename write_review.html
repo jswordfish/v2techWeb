@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title id='Description'>Grovenue</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!--<link rel="icon" href="favicon.png">-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/menu.css">
+
+    </head>
+	
+    <body>
+
+        <div class="header">
+            <div class="logo col-md-3"> 
+                <a href="index.html"><img src="images/colorlogo.png" /></a>
+            </div>
+
+            <div class="menu col-md-9">
+                <div class="top">
+                    <div class="search">
+                        <!--<div class="all"><a href="javascript:void(0);" id="all">All <i class="fa fa-caret-down" aria-hidden="true"></i></a> </div>-->
+                        <input type="text" name="search" placeholder="Search" /><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <!--<div class="popup">
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                            <ul>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Engineering</a></li>
+                                <li><a href="#">Medicine</a></li>
+                                <li><a href="#">Law</a></li>
+                                <li><a href="#">Unversities</a></li>
+                                <li><a href="#">Pharmacy</a></li>
+                                <li><a href="#">Computer Applications</a></li>
+                                <li><a href="#">Finance & Accounts</a></li>
+                                <li><a href="#">Hospitality & Tourism</a></li>
+                                <li><a href="#">Media & Jourmalism</a></li>
+                                <li><a href="#">Animation & Fashion</a></li>
+                                <li><a href="#">School</a></li>
+                                <li><a href="#">Competition</a></li>
+                                <li><a href="#">Study Abroad</a></li>			
+                            </ul>
+                        </div>-->
+                    </div>
+                    <div class="login-reg"> 
+                        <img src="images/user.png" />
+                        <div class="logreg">
+                            <a href="#">login</a> / <a href="#">register</a>
+                        </div>
+                    </div>
+                </div>
+                <div id='cssmenu'>
+                    <ul>
+                        <li><a href="#" class="menulink">discover</a></li>
+                        <li class='active'><a href="#" class="menulink">prepare for greatness</a></li>
+                        <li><a href="#" class="menulink">be job ready</a></li>
+                        <li><a href="write_review.html" class="menulink">write a review</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- Header -->
+		
+		<div class="tellyourgb">
+			<div class="tellusreview">
+				<div class="tellusleft col-md-9 text-center">
+					<label>Share your gyaan</label>
+				</div>
+				<div class="tellusright col-md-3">
+					<div class="img">
+						<img src="images/testimonials.png">
+					</div>
+					<div class="userinfo">
+						<h3>User Name</h3>
+						<p>14 Review, 38 Followers</p>
+						<span>Last Activity <br> 15 minutes ago</span>
+						<!--<img src="images/cup.png">-->
+					</div>
+				</div>
+			</div> <!-- User Name -->
+	
+			<div class="container">
+				<div class="selectbook">
+					<div class="book col-md-4 text-center">
+						<a href="#"><img src="images/book.png"></a>
+						<h3><a href="#">Books</a></h3>
+					</div>
+					<div class="coaching col-md-4 text-center">
+						<a href="#"><img src="images/coaching.png"></a>
+						<h3><a href="#">Coaching Classes</a></h3>
+					</div>
+					<div class="digital col-md-4 text-center">
+						<a href="#"><img src="images/digital.png"></a>
+						<h3><a href="#">Digital Tools</a></h3>
+					</div>
+				</div>
+			</div> <!-- Books, Coaching Classes, Digital Tools -->
+	
+			<div class="container auto-search">
+				<div class="row">
+					<div class="col-md-12 searchbox">
+						<form name="search" action="javascript:void(0);">
+							<input type="text" name="autosearch" list="autosearch" id="txt" placeholder="SEARCH"/>
+							<input type="submit" name="submit" value="search" id="searchbook">
+<!--							<datalist id="autosearch">
+								<option value="Big Vision, medium Business : The Four Keys to Finding Success & Satisfaction as a Lifestyle Entrepreneur">
+								<option value="The Leadership Pill: The Missing Ingredient in Motivating People Today">
+								<option value="The Great Unraveling: Losing Our Way in the New Century">
+								<option value="The Five Dysfunctions of a Team: A Leadership Fable">
+								<option value="The Sales Bible: The Ultimate Sales Resource, Revised Edition">
+								<option value="The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You">
+								<option value="The Smartest Guys In The Room">
+								<option value="The Tipping Point: How Little Things Can Make a Big Difference">    
+							</datalist>-->
+						</form>
+					</div>
+				</div>
+			</div> <!-- Search -->
+		</div>
+		
+		<div class="container searchtxt">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="radio-option">
+                        <div class="radio_tips">
+                            
+                            <input type="checkbox">Search by ISBN
+                            
+<!--                            <input type="radio" name="radio">All 
+                            <input type="radio" name="radio">Title
+                            <input type="radio" name="radio">Author
+                            <input type="radio" name="radio">Subject
+                            <input type="radio" name="radio">Exam-->
+                        </div>
+                        <!--<div id="tips"><input type="radio" name="radio">Search tips
+                            <div id="searchtips">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                <label>Sreach Tips</label>
+                                <ul>
+                                    <li>harry potter (does an AND search by default)</li>
+                                    <li>harry or potter (friend titles with either word)</li>
+                                    <li>harry-potter (same as harry NOT potter)</li>
+                                    <li>titles:dune (search all books titles)</li>
+                                    <li>authors:herbert (search all author names)</li>
+                                    <li>shelves:sciencefiction (search all shelves)</li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    </div>
+<!--                    <div class="lookingbook">
+                        <label style="width: 100%;">Looking for a book?</label>
+                        <ul>
+                            <li>Search by both title and author, and double-check the spelling.</li>
+                            <li>Try searching by ISBN.</li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+		
+		<div class="feedback">
+			<div class="feedbacklink">
+				<a href="javascript:void(0);" id="showfeedback">feedback</a>
+			</div>
+			<div class="forms">
+				<div class="closes" id="hidefeedback"><img src="images/close.png"></div>
+				<p>We'd love to hear from you. Drop us a note!</p>
+				<input type="text" name="name" placeholder="Name" />
+				<input type="email" name="email" placeholder="Email" />
+				<textarea name="message" placeholder="Message"></textarea>
+				<input type="submit" name="submit" value="Submit" />
+			</div>
+		</div> <!-- FeedBack -->
+
+        <div class="container">
+            <div class="col-md-12 booklist">
+                <div class="item text-center">
+                    <img src="images/book1.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book2.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book3.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book4.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book5.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book6.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book7.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book8.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book9.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book10.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book11.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book12.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book13.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book14.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+                <div class="item text-center">
+                    <img src="images/book15.png">
+                    <label>RATE IT</label>
+                    <fieldset class="rating">       
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset> 
+                    <div class="read"><a href="#">want to read</a></div>
+                </div>
+            </div>
+            <div class="loadmore"><a href="#">load more</a></div>
+        </div> <!-- Search Listing -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/colorlogo.png" /></a></div>
+                <div class="menu partners col-md-3">
+					<div class="title">About Us</div>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="partners col-md-3">
+                    <div class="title">Partners</div>
+                    <ul>
+                        <li><a href="#">Advertise With Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="others col-md-3">
+                    <div class="title">Others</div>
+                    <ul>
+                        <li><a href="#">FAQS</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!--<div class="experience">
+                    <div class="title">For Mobile Experience</div>
+                    <img src="images/googleplay.png" />
+                </div>-->
+                <div class="followus col-md-3">
+                    <div class="title">Follow Us On</div>
+                    <ul>
+                        <li><a href="#"><img src="images/facebook.png" /></a></li>
+                        <li><a href="#"><img src="images/twitter.png" /></a></li>
+                        <li><a href="#"><img src="images/instra.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- Footer -->
+
+        <div class="horizonral"></div>
+
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/custom-scripts.js"></script>
+        <script src="js/menu.js"></script>
+		
+		<script>
+            $(document).ready(function () {
+                $("#all").click(function () {
+                    $(".popup").toggle();
+                });
+            });
+        </script> <!-- Categories Script -->
+		
+		<script>
+            $(document).ready(function () {
+                $("#hidefeedback").click(function () {
+                    $(".forms").hide();
+                });
+                $("#showfeedback").click(function () {
+                    $(".forms").show();
+                });
+            });
+        </script> <!-- FeedBack Script -->
+		
+		<script type="text/javascript">
+            $(function () {
+                var menuVisible = false;
+                $('#searchtips').css({'display': 'none'});
+                $('#tips').hover(function () {
+                    if (menuVisible) {
+                        $('#searchtips').css({'display': 'none'});
+                        menuVisible = false;
+                        return;
+                    }
+                    $('#searchtips').css({'display': 'block'});
+                    menuVisible = true;
+                });
+                $('#searchtips').hover(function () {
+                    $(this).css({'display': 'none'});
+                    menuVisible = true;
+                });                         
+            });
+        </script> <!-- Tool Trp-->
+		
+    </body>
+</html>

@@ -1,0 +1,763 @@
+/* Responsive CSS Styles Table of Contents */
+
+@media only screen and (min-width: 991px) and (max-width: 1220px){
+.footer .followus ul {
+  left: 20%;
+  margin: 0;
+  position: relative;
+}
+.findyourcareer .getstarted h4{
+	margin: 0 0 5px;
+}
+.findyourcareer .getstarted h5 {
+  margin-bottom: 15px;
+}
+.findyourcareer .getstarted p {
+	font-size:13px;
+}
+.findyourcareer .getstarted a {
+  left: 25%;
+}
+#cssmenu > ul > li {
+  padding: 5px 32px !important;
+}
+#cssmenu > ul > li > a{
+	font-size:12px !important;
+}
+.feedback .forms {
+  width: 30%;
+}
+.rating{
+	width:77%;
+}
+.read {
+  width: 80%;
+}
+.coverage .jqxSlider {
+	width:85% !important;
+}
+.sub_button .buttons{
+	width:75% !important;
+}
+.coverage_tip {
+  width: 40%;
+}
+.coverage_tip p {
+  font-size: 12px;
+}
+.coverage_tip i {
+  left: 60%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 990px){
+.footer .followus ul {
+  left: 10%;
+  margin: 0;
+  position: relative;
+}
+.header .logo{
+	width:20%;
+	padding:0;
+	float:left;
+}
+.header .logo img {
+  padding: 17px 0;
+}
+.header .menu{
+	width:80%;
+	float:left;
+}
+.header .menu .top .search input[type="text"]{
+	width:315px;
+}
+.testimonials .carousel-inner .caption .desc{
+	width:91%;
+}
+.trendingnow .trending .desc{
+	height:225px;
+}
+.trendingnow .trending .titles {
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 20px 10px 20px 0;
+}
+#cssmenu > ul > li > a{
+	font-size:12px !important;
+}
+.feedback .forms {
+  width: 40%;
+}
+.selectbook .book,
+.selectbook .coaching,
+.selectbook .digital {
+float:left;
+width:33.33%;
+}
+.radio_tips,
+#tips{
+	margin-top:20px;
+}
+#searchtips i{
+	-webkit-transform: rotate(-270deg);
+	-moz-transform: rotate(-270deg);
+	-ms-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  left: 70px;
+  top: -19px;
+}
+#searchtips {
+  left: 0px;
+  top: 30px;
+  width: 360px;
+  z-index: 999999;
+}
+.book_detail {
+  padding: 10px 0;
+}
+.book_detail .col-md-5.text-center {
+  float: left;
+  width: 50%;
+}
+.book_detail .book_info {
+  float: right;
+  width: 50%;
+}
+.book_detail .book_info h3{
+	font-size:20px;
+}
+.book_detail  .book_info p {
+  font-size: 13px;
+}
+.haveuread .readbook {
+  float: left;
+  width: 50%;
+}
+.haveuread .readbook p {
+  font-size: 17px;
+  font-weight: bold;
+}
+.haveuread .bookrate {
+  float: left;
+  width: 50%;
+}
+.coverage .jqxSlider {
+	width:100% !important;
+}
+.paginations #prev {
+  left: -15px;
+  top: -5px;
+}
+.paginations i {
+  font-size: 30px;
+}
+.paginations #next {
+  right: -15px;
+  top:-5px;
+}
+
+.sub_button .buttons{
+	width:72% !important;
+}
+.coverage_tip {
+  width: 40%;
+}
+.coverage_tip p {
+  font-size: 12px;
+}
+.coverage_tip i {
+  left: 58%;
+}
+.footer .menu, 
+.footer .partners, 
+.footer .others,
+.footer .experience{
+	width:25%;
+	margin-bottom: 25px;
+  	padding: 0 15px;
+  	text-align:left;
+	height:100px;
+}  
+.footer .followus {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  width:25%;
+  text-align:left;
+  height:100px;
+}
+}
+
+@media only screen and (min-width: 821px) and (max-width: 990px){
+.findyourcareer .threesteps{
+	width:48%;
+	margin:0 auto;
+}
+.findyourcareer .careersteps{
+	margin-bottom:15px;
+	float:left;
+}
+.findyourcareer .findcareer img{
+	width:100%;
+	float:left;
+}
+.findyourcareer .getstarted h4 {
+  margin: 15px 0 10px;
+}
+.findyourcareer .getstarted h5 {
+  margin-bottom: 20px;
+}
+#cssmenu > ul > li {
+  padding: 5px 20px !important;
+}
+.tellusreview .tellusleft{
+  float: left;
+  width: 60%;
+}
+.tellusreview .tellusright {
+  float: left;
+  width: 40%;
+}
+.tellusreview .tellusleft label {
+  right: 0;
+}
+.booklist .item{
+	width:33.33%;
+	padding:25px 0;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 820px){
+.findyourcareer .threesteps{
+	width:54%;
+	margin:0 auto;
+}
+.findyourcareer .careersteps{
+	margin-bottom:15px;
+	float:left;
+}
+.findyourcareer .findcareer img{
+	width:100%;
+	float:left;
+}
+.findyourcareer .getstarted h4 {
+  margin: 15px 0 10px;
+}
+.findyourcareer .getstarted h5 {
+  margin-bottom: 20px;
+}
+#cssmenu > ul > li {
+  padding: 5px 15px !important;
+}
+.tellusreview .tellusleft{
+  float: left;
+  width: 60%;
+}
+.tellusreview .tellusright {
+  float: left;
+  width: 40%;
+}
+.tellusreview .tellusleft label {
+  right: 0;
+}
+.booklist .item{
+	width:33.33%;
+	padding:25px 0;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.footer .menu, 
+.footer .partners, 
+.footer .others,
+.footer .experience{
+	/*width:33.33%;*/
+	width:25%;
+	margin-bottom: 25px;
+  	padding: 0 15px;
+  	text-align:left;
+	height:100px;
+}  
+.footer .followus {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  /*width: 66.66%;*/
+  width:25%;
+  text-align:left;
+  height:100px;
+}
+.footer .followus ul {
+  left: 0;
+  margin: 0;
+  position: relative;
+}
+.trennow{
+	width:70%;
+	margin:0 auto;
+}
+.trendingnow .trending {
+	margin-bottom:15px;
+	float:left;
+	width:100%;
+}
+.findyourcareer .threesteps{
+	width:60%;
+	margin:0 auto;
+}
+.findyourcareer .careersteps{
+	margin-bottom:15px;
+	float:left;
+}
+.findyourcareer .findcareer img{
+	width:100%;
+	float:left;
+}
+.findyourcareer .getstarted h4 {
+  margin: 8px 0 10px;
+  font-size:23px;
+}
+.findyourcareer .getstarted h5 {
+  margin-bottom: 15px;
+  font-size:15px;
+}
+.findyourcareer .getstarted p {
+	font-size:13px;
+}
+
+}
+@media only screen and (min-width: 480px) and (max-width: 600px){
+.findyourcareer .getstarted a {
+  left: 25%;
+}
+.sub_button .buttons{
+	width:60% !important;
+}
+.coverage_tip {
+  width: 65%;
+}
+.coverage_tip p {
+  font-size: 12px;
+}
+.coverage_tip i {
+  left: 55%;
+}
+.findyourcareer .threesteps{
+	width:70%;
+	margin:0 auto;
+}
+}
+
+@media only screen and (max-width: 768px){
+.testimonials .carousel-inner .leftimage img{
+	float:left;
+	position:relative;
+	left:35%;
+}
+.testimonials .carousel-inner .caption .titles{
+	margin:10px 0 30px;
+}
+.testimonials .carousel-inner .caption .left img, 
+.testimonials .carousel-inner .caption .right img{
+	width:30px;
+}
+.testimonials .carousel-inner .caption .desc{
+	width:100%;
+}
+#menu-button{
+	background-color:#45474a;
+}
+.header .menu #cssmenu{
+	padding:20px 0 !important;
+}
+.header .menu{
+	width:100%;
+}
+#cssmenu > ul > li {
+  background-color: rgb(45, 47, 49);
+  float: left !important;
+  padding: 15px !important;
+}
+#cssmenu > ul > li a{
+	color: rgb(141, 141, 141) !important;
+	font-size:12px !important;
+}
+#cssmenu > ul > li:hover{
+	background-color: #45474a;
+}
+.feedback .feedbacklink,
+.feedback .forms{
+	display:none !important;
+}
+.booklist .item{
+	width:50%;
+	padding:25px 0;
+}
+.tellusreview .tellusleft,
+.tellusreview .tellusright {
+  float: left;
+  width: 50%;
+}
+.tellusreview .tellusleft label {
+  padding: 20px 0;
+  right: 0;
+  top: 0;
+}
+.loadmore {
+  left: 35%;
+  float: left;
+  width: 55%;
+}
+.rating{
+	width:auto;
+	position: relative;
+  	right: 25%;
+}
+.read {
+  float: right;
+  position: relative;
+  right: 23%;
+  width: auto;
+}
+.radio_tips,
+#tips{
+	margin-top:20px;
+}
+
+.book_detail{
+	padding:10px;
+}
+.haveuread .readbook p {
+  font-size: 18px;
+}
+.book_label .coverage li {
+  font-size: 13px;
+}
+.coverage .jqxSlider {
+	width:100% !important;
+}
+.paginations #prev {
+  left: -10px;
+  top: -5px;
+}
+.paginations i {
+  font-size: 30px;
+}
+.paginations #next {
+  right: -10px;
+  top:-5px;
+}
+
+.coverage_tip {
+  width: 50%;
+}
+.coverage_tip p {
+  font-size: 12px;
+}
+.coverage_tip i {
+  left: 47%;
+}
+.sub_button .buttons{
+    width: 65% !important;
+}
+.sub_button .coverage_tip{
+    width: 50%;
+    right: 0;
+}
+.coverage_tip i {
+  left: 22%;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 767px){
+#searchtips i{
+	-webkit-transform: rotate(-270deg);
+	-moz-transform: rotate(-270deg);
+	-ms-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  left: 270px;
+  top: -19px;
+}
+#searchtips {
+  background-color: rgb(76, 44, 121);
+  left: -220px;
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  width: 335px;
+  z-index: 999999;
+}
+}
+@media only screen and (max-width: 625px){
+.header .menu .top .login-reg, 
+.header .menu .top .search {
+  width: 100%;
+}
+.header .menu .top .search input[type="text"] {
+  width: 95%;
+}
+.header .logo{
+	width:100%;
+}
+.header .menu .top .login-reg, 
+.header .menu .top .search {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+.booklist .item{
+	width:100%;
+	padding:25px 0;
+}
+.tellusreview .tellusleft,
+.tellusreview .tellusright {
+  float: left;
+  width: 100%;
+}
+.tellusreview .tellusleft label {
+  padding: 20px 0;
+  right: 0;
+  top: 0;
+}
+.loadmore{
+	left:27%;
+}
+.rating{
+	width:auto;
+	position: relative;
+  	right: 38%;
+}
+.read {
+  float: right;
+  position: relative;
+  right: 32%;
+  width: 35%;
+}
+.footer .menu, 
+.footer .partners, 
+.footer .others,
+.footer .experience{
+	/*width:33.33%;*/
+	width:50%;
+	margin-bottom: 25px;
+  	padding: 0 15px;
+  	text-align:left;
+	height:100px;
+}  
+.footer .followus {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  /*width: 66.66%;*/
+  width:50%;
+  text-align:left;
+  height:100px;
+}
+.sub_button .buttons {
+  width: 60% !important;
+}
+.sub_button .coverage_tip {
+  right: 0;
+  width: 65%;
+}
+.coverage_tip i {
+  left: 32%;
+}
+}
+
+@media only screen and (max-width: 479px){
+.header{
+	padding:0;
+}
+.header .logo{
+	width:100%;
+}
+.header .logo img{
+	width:50%;
+	padding-left:0;
+	padding-right:0;
+}
+.header .menu{
+	width:100%;
+}
+.header .menu .top .search input[type="text"] {
+  width: 95%;
+}
+.slides{
+	padding:100px 0;
+	background-position:45% 100%;
+}
+.slides .stroll a{
+	margin:8px;
+	padding:15px;
+}
+.findyourcareer .careersteps{
+	margin-bottom:15px;
+	float:left;
+}
+.findyourcareer .getstarted h4 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.findyourcareer .getstarted h5 {
+  margin-bottom: 10px;
+  font-size:15px;
+}
+.findyourcareer .getstarted p {
+	font-size:13px;
+}
+.findyourcareer .findcareer img{
+	width:100%;
+}
+.testimonials .carousel-inner .leftimage img{
+	left:30%;
+}
+.trending {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.trendingnow .trending .desc {
+  padding: 40px 25px 25px;
+}
+.footer .menu, 
+.footer .partners, 
+.footer .others, 
+.footer .experience, 
+.footer .followus {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  width: 100%;
+  text-align:center;
+}
+.footer .logo img {
+  position: relative;
+  left: 40%;
+}
+.footer .experience img{
+	position:relative;
+	left:25%;
+}
+.footer .followus ul {
+  left: 35%;
+  margin: 0;
+  position: relative;
+}
+.header .menu .top .search .popup {
+  right: 0;
+  width: 100%;
+}
+.tellusreview .tellusleft,
+.tellusreview .tellusright {
+  float: left;
+  width: 100%;
+}
+.tellusreview .tellusleft label {
+  padding: 20px 0;
+  right: 0;
+  top: 0;
+}
+.booklist .item{
+	width:100%;
+	padding:25px 0;
+}
+
+.rating {
+  width: 45%;
+  position: relative;
+  	right: 0%;
+}
+.read {
+  float: right;
+  position: relative;
+  right: 20%;
+  width: 46%;
+}
+.loadmore{
+	left:20%;
+}
+.radio_tips{
+	margin-top:20px;
+}
+.radio_tips, #tips {
+  font-size: 13px;
+}
+.radio-option input {
+  margin-left: 15px !important;
+  margin-right: 3px !important;
+}
+#searchtips {
+  left: 0;
+  padding: 10px;
+  top: 25px;
+  width: 290px;
+}
+#searchtips i{
+	-webkit-transform: rotate(-270deg);
+	-moz-transform: rotate(-270deg);
+	-ms-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  left: 35px;
+  top: -19px;
+}
+.sub_button .buttons{
+	width:38% !important;
+}
+.coverage_tip {
+  width: 100%;
+}
+.coverage_tip p {
+  font-size: 12px;
+}
+.coverage_tip i {
+  left: 17%;
+}
+.sub_button .coverage_tip{
+    width: 83% !important;
+    right: 0;
+}
+}
+@media only screen and (max-width: 370px){
+.rating {
+  width: 53%;
+}
+.read {
+  width: 50%;
+}
+.loadmore{
+	left:13%;
+	width:71%;
+}
+
+}
+@media only screen and (max-width: 320px){
+.findyourcareer .getstarted a,
+.testimonials .carousel-inner .leftimage img{
+	left:25%;
+}
+.footer .logo img {
+  position: relative;
+  left: 35%;
+}
+.footer .experience img{
+	position:relative;
+	left:10%;
+}
+.footer .followus ul {
+  left: 25%;
+  margin: 0;
+  position: relative;
+}
+.header .menu .top .search input[type="text"] {
+  margin-left: 10px;
+  width: 90%;
+}
+.read {
+  width: 56%;
+}
+.rating {
+  width: 54%;
+}
+.loadmore{
+	left:13%;
+	width:75%;
+}
+}
